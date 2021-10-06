@@ -35,8 +35,8 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Propagando el state de nuestros componentes</p>
-        <Contador contadorInicial={100} /> 
-               
+        <Contador contadorInicial={10} /> 
+
         </div>
        
       </div>
