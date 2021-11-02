@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ConditionalSection from './sections/conditional';
 
 class Contador extends Component {
   constructor (props) {
@@ -36,6 +37,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>Propagando el state de nuestros componentes</p>
         <Contador contadorInicial={50} /> 
+        <ConditionalSection/>
 
         </div>
        
