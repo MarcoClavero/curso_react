@@ -28,7 +28,6 @@ export default class ConditionalSection extends Component {
     render (){
         return(
             <div>
-                <h4>Conditional Rendering</h4>
                 {this.state.mostrarA ? <LogoutButton/> : <LoginButton/>}
             </div>
         )

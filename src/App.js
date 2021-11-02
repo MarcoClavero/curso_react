@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ConditionalSection from './sections/conditional';
+import cars from './data/car.json'
 
 class Contador extends Component {
   constructor (props) {
@@ -38,6 +39,18 @@ class App extends Component {
           <p>Propagando el state de nuestros componentes</p>
         <Contador contadorInicial={50} /> 
         <ConditionalSection/>
+        <ul>
+          {
+            cars.map(car => {
+              return (
+                <li key={car.id}>
+                  <p><strong>Nombre: </strong>{car.name}</p>
+                  <p><strong>Marca: </strong>{car.company}</p> 
+                </li>
+              )
+            })
+          }
+        </ul>
 
         </div>
        
