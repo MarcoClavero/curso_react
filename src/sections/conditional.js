@@ -4,7 +4,7 @@ import React, {Component} from "react";
 class LoginButton extends Component{
     render(){
         return(
-            <button type="button" class="btn btn-primary">Iniciar Sesión</button>
+            <button  onClick={()=> alert('Hi here')}>Iniciar Sesión</button>
         )
     }
 }
@@ -14,7 +14,7 @@ class LogoutButton extends Component{
         return(
             <div>
                 <p>Bienvenido usuario!</p>
-                <button type="button" class="btn btn-primary"> Cerrar Sesión</button>
+                <button > Cerrar Sesión</button>
             </div>
         )
     }
