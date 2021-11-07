@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import Forms from './sections/forms';
+//import Forms from './sections/forms';
 //import ConditionalSection from './sections/conditional';
 //import cars from './data/car.json'
 import PropTypes from 'prop-types'
+//import FetchExample from './sections/fech-example';
+import EjemploDeCicloDeActualización from './sections/life-cycle/ejemploCicloDeActualizacion';
 
 class Box extends Component{
   render(){
@@ -89,6 +91,10 @@ class App extends Component {
       <div className="App">
         <div className="App-header" onMouseMove={this.handleMouseMove}
           style={{border:' 1px solidd #000',padding:10}}>
+          
+          <EjemploDeCicloDeActualización/>
+
+          {/*  
           <Article
             author='Marco'
             date={new Date().toLocaleDateString()}
@@ -97,9 +103,9 @@ class App extends Component {
               <p>Contenido envuelto dentro del Article</p>
 
           </Article>
-          
+          <FetchExample/>
           <Forms/>
-
+          */}
           {/*
           <p>{this.state.mouseX}, {this.state.mouseY}</p>
           <img src={logo} className="App-logo" alt="logo" />
