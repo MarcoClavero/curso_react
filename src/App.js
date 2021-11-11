@@ -7,6 +7,7 @@ import './App.css';
 import PropTypes from 'prop-types'
 //import FetchExample from './sections/fech-example';
 import EjemploDeCicloDeActualización from './sections/life-cycle/ejemploCicloDeActualizacion';
+import EjemploDeComponentDidCatch from './sections/life-cycle/componentDidCatch';
 
 class Box extends Component{
   render(){
@@ -93,7 +94,7 @@ class App extends Component {
           style={{border:' 1px solidd #000',padding:10}}>
           
           <EjemploDeCicloDeActualización/>
-
+          <EjemploDeComponentDidCatch/>
           {/*  
           <Article
             author='Marco'
